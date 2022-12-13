@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.Barjeta {
+    min-height: 100vh;
+    overflow: hidden;
+}
+.Barjeta *{
+    visibility: hidden;
+}
+
+.Barjeta section {
+    visibility: visible;
+    display: block;
+    height: 700px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Tarjeta {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Tarjeta * {
+    visibility: visible;
+}
+.Tarjeta img {
+    height: 100%;
+    width: 50%;
+}
+.Tarjeta .Tarjeta_Texto {
+    padding: 20px 0;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.Tarjeta .Tarjeta_Texto h2 {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Poppins';
+    border-bottom: solid black 4px;
+}
+.Tarjeta .Preview_Texto {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+}
+.Tarjeta .Preview_Texto a {
+    display: block;
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: #bbb;
+    font-size: 22px;
+    color: #000;
+    pointer-events: all;
+    font-family: 'Poppins';
+}
+.Tarjeta .Preview_Texto i {
+    font-size: 25px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: all;
+    cursor: pointer;
+}
+.Tarjeta .Preview_Texto .Cambio_Contenedor {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: solid 2px #000;
+    pointer-events: all;
+}
