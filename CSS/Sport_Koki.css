@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SEGOE UI';
+    user-select: none;
+    transition: background 0.1s, color 0.1s;
+}
+
+body {
+    background-color: #efefef;
+    transition: background 1s, color 1s;
+}
+
+header {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#Header_img {
+    height: 100%;
+    border-radius: 50%;
+}
+#Nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Header_Links {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    height: 90%;
+    color: #131313;
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.Header_Links::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(18, 18, 18, 0.3);
+    bottom: 0;
+    transform: translateY(10px);
+    transition: transform 0.6s;
+}
+.Header_Links:hover::after {
+    background-color: #131313;
+    transform: translateY(-5px);
+    transition: background 0.6s, transform 0.6s;
+}
+
+picture {
+    width: 100%;
+    display: flex;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    height: 100vh;
+}
+.Picture_Fondo {
+    width: 100%;
+}
+.No-Preview section {
+    margin: 50px auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 70px;
+    position: relative;
+}
+.No-Preview .Section_Contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.No-Preview .Contenedor_Tarjeta {
+    background-color: #fff;
+    min-width: 450px;
+    height: 525px;
+    text-align: center;
+    border-radius: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 3px 15px #dcdcdc;
+    margin: 0 20px;
+    transition: box-shadow 1.2s ease, transform 0.4s;
+    cursor: pointer;
+}
+.No-Preview .No_Pointer_Tarjeta {
+    cursor: default;
+}
+.No-Preview .Contenedor_Tarjeta:hover {
+    box-shadow: 0 0 3px 15px #dcdcdc, 0 0 4px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: transform 0.4s;
+}
+.No-Preview .Tarjeta_Titulo {
+    margin-bottom: 10px;
+}
+.No-Preview .Tarjeta_imagen {
+    width: 80%;
+    height: 70%;
+    border-radius: 0.4em;
+}
+.No-Preview .Preview_Texto {
+    display: none;
+}
+
+footer {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 95%;
+    border-radius: 0.4em;
+    background-color: #fff;
+}
+
+.Footer_Mix {
+    margin: 0 auto;
+    width: 70%;
+    height: 300px;
+    display: flex;
+}
+.Footer_Galeria {
+    height: 100%;
+    width: 20%;
+    position: relative;
+}
+.Footer_Imagen {
+    height: 100%;
+    position: absolute;
+    bottom: 60px;
+    right: 70px;
+    border-radius: 50%;
+}
+
+.Footer_Contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 40px;
+}
+.Footer_Form {
+    margin:  0 auto;
+    width: 100%;
+    position: relative;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.Footer_Input {
+    outline: none;
+    height: 45px;
+    width: 100%;
+    background: none;
+    border-radius: 2em;
+    border: 3px solid #000;
+    padding-left: 20px;
+    color: #000;
+    font-size: 20px;
+}
+.Footer_Input::placeholder {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+.Footer_Submit {
+    outline: none;
+    border: 3px solid #000;
+    height: 40px;
+    width: 50%;
+    background: #000;
+    border-radius: 2em;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Footer_Nav {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    border-bottom: 2px solid #000;
+    gap: 25%;
+}
+.Footer_Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Footer_Nav_Links {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.Nav_Links {
+    display: flex;
+    text-decoration: none;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.5);
+}
+.Nav_Links:hover {
+    color: cornflowerblue;
+    font-weight: 500;
+}
+
+.No-Preview .Cambio {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    border: solid #000 2px;
+    border-radius: 10px;
+}
+.No-Preview .Cambio_Contenedor {
+    width: 70px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+    border-radius: 10px;
+    position: sticky;
+    top: 50%;
+    border: solid 2px #000;
+    margin:10px;
+}
+#Span_Modo {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #363333;
+    position: relative;
+    display: flex;
+    border: solid #757575 3px;
+    cursor: pointer;
+}
+.Cambio_Contenedor:hover {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+iframe {
+    display: none;
+}

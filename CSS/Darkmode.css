@@ -1,0 +1,55 @@
+.Darkmode, .Darkmode * {
+    background-color: #201e1e;
+    color: #fff;
+    transition: background 1s, color 1s;
+}
+
+.Darkmode .Header_Links::after {
+    background-color: rgba(212, 212, 212, 0.3);
+}
+.Darkmode .Header_Links:hover::after {
+    background-color: #fff;
+}
+
+.Darkmode picture {
+    border-color: #fff;
+    border-width: 1px;
+    margin-top: 10px;
+}
+.Darkmode .Contenedor_Tarjeta, .Darkmode .Contenedor_Tarjeta * {
+    background-color: #363333;
+}
+.Darkmode .Contenedor_Tarjeta {
+    box-shadow: 0 0 3px 15px #757575;
+}
+.Darkmode .Contenedor_Tarjeta:hover {
+    box-shadow: 0 0 3px 12px #757575 , 0 0 4px 18px rgba(237, 235, 235, 0.5);
+}
+.Darkmode footer, .Darkmode footer * {
+    background-color: #363333;
+}
+.Darkmode .Footer_Input {
+    border-color: #fff;
+}
+.Darkmode .Footer_Input::placeholder {
+    color: #fff;
+}
+.Darkmode .Footer_Submit {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.Darkmode .Cambio {
+    border-color: #757575;
+}
+.Darkmode .Cambio_Contenedor {
+    background-color: #363333;
+    border-color: #757575;
+}
+.Darkmode #Span_Modo {
+    background-color: rgb(248, 216, 6);
+    border-color: #757575;
+}
+.Darkmode .Cambio_Contenedor:hover {
+    box-shadow: 0 0 4px 4px rgba(237, 235, 235, 0.5);
+}
